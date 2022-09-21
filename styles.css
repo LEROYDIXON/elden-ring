@@ -1,0 +1,33 @@
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    border: 2px solid #ef8b09;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+   }
+.header a{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+.logo {
+    max-height: 150px;
+    margin-right: 60px;
+
+}
