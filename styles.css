@@ -127,12 +127,20 @@ section {
     left: 20%;
     }
    
-    .gallery_images {
+    .top_images {
      /* width was important to add to get the images to actually have spacing between them*/
     position: absolute;
     display: flex;
     justify-content: space-evenly;
     top: 30%;
+    width: 100%;
+    cursor: pointer;
+    }
+    .bottom_images{
+     position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: 170%;
     width: 100%;
     cursor: pointer;
     }
