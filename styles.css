@@ -10,6 +10,7 @@ body {
     background-color: black;
     font-family: 'Poppins', sans-serif;
     height: auto;
+    zoom: 100%;
 }
 
 :root {
