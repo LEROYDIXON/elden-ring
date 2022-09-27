@@ -16,27 +16,26 @@ body {
 
 :root {
     --main-color: #ef8b09;
-    --white: #fff;
+    --white: whitesmoke;
 }
 
 /* Header */
 .header {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: -40;
     animation: move-to-right 2s;
     background-color: black;
-    position: sticky;
-    top: 0%;
-    z-index: 999;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 .header a {
+    color: var(--white);
+    font-size: 30px;
     margin: 10px;
     text-decoration: none;
-    font-size: 30px;
-    color: var(--white);
 }
 
 .header a:hover {
@@ -52,6 +51,7 @@ body {
 
 /* Main */
 .heading-title {
+    animation: move-up 2s;
     color: var(--white);
     font-size: 80px;
     font-weight: 500;
@@ -60,35 +60,35 @@ body {
     text-align: center;
     width: 100%;
     z-index: 1;
-    animation: move-up 2s;
-    filter: brightness(0.9);
 }
 
 .heading-text {
     color: var(--white);
     font-size: 30px;
     font-weight: 200;
+    left: 10%;
     position: absolute;
     top: 65%;
-    z-index: 1;
     width: 60%;
-    left: 10%;
+    z-index: 1;
 }
 
 .heading-paragraph {
     color: var(--white);
     position: absolute;
     top: 80%;
+    left: 10%;
     z-index: 1;
     width: 60%;
-    left: 10%;
 }
 
 /* Showcase */
 .showcase img {
     filter: brightness(0.6);
     width: 100%;
+    margin-top: 100px;
 }
+
 
 .elden_ratings {
     position: relative;
@@ -97,6 +97,7 @@ body {
     max-width: 40%;
     left: 30%;
 }
+
 
 /*section Gallery*/
 section {
@@ -113,9 +114,9 @@ section {
     top: 15%;
     text-align: center;
     width: 100%;
-    color: #fff;
+    color: whitesmoke;
     font-size: 70px;
-    z-index: 2;
+    z-index: 1;
     filter: brightness(0.9);
 }
 
@@ -125,29 +126,84 @@ section {
     z-index: 1;
     width: 60%;
     left: 20%;
-    }
-   
-    .top_images {
-     /* width was important to add to get the images to actually have spacing between them*/
+}
+
+.top_images {
+    /* width was important to add to get the images to actually have spacing between them*/
     position: absolute;
     display: flex;
     justify-content: space-evenly;
     top: 30%;
     width: 100%;
     cursor: pointer;
-    }
-    .bottom_images{
-     position: absolute;
+}
+
+.bottom_images {
+    position: absolute;
     display: flex;
     justify-content: space-evenly;
     top: 170%;
     width: 100%;
     cursor: pointer;
-    }
-.game_images:hover {
-   transform: scale(1.3);
-   transition: 1s;
 }
+
+.game_images:hover {
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+/* Section Trailer */
+span {
+    text-shadow: red 1px 0 10px;
+}
+
+.trailer_title {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 70px;
+    z-index: 1;
+    filter: brightness(0.9);
+}
+
+.trailer_paragraph {
+    color: whitesmoke;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 200;
+    top: 90%;
+    z-index: 1;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    font-family: poppin
+}
+
+.elden_youtube {
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+}
+
+/* Footer */
+.footer_text {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: black;
+    font-weight: 200;
+}
+
+
+/* Mobile Responsiveness */
+
+
 /* Key Frames */
 @keyframes move-to-right {
     0% {
@@ -165,7 +221,6 @@ section {
     0% {
         opacity: 0;
         transform: translateY(50px);
-
     }
 
     100% {
